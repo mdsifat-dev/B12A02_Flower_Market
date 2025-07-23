@@ -33,7 +33,7 @@
   margin: 0 150px;
 }
 
-/* Navbar styles */
+/* Navbar styles starts */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -49,8 +49,9 @@
 .nav-contents li {
   margin-right: 48px;
 }
+/* Navbar styles ends  */
 
-/* Banner Styles */
+/* Banner Styles starts */
 .banner {
   display: flex;
   justify-content: space-between;
@@ -70,10 +71,75 @@
 .banner-description {
   font-size: 1.4rem;
 }
+/* Banner Styles ends */
+
+/* Our plants and cards  */
+.our-plants {
+  text-align: center;
+}
+/* .our-plants-info {
+  text-align: center;
+} */
+
+.our-plants-title {
+  font-size: 4rem;
+  gap: 16px;
+}
+
+.our-plants-description {
+  text-align: center;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.5);
+  font-size: 1.375rem;
+  margin-bottom: 50px;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.card {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.card h3 {
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+
+.product-name {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+.card button {
+  background-color: #e95a08;
+  color: white;
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border: none;
+  text-align: center;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+/* Our plants and cards Ends */
 
 /* Responsive Design for Mobile */
 @media screen and (max-width: 576px) {
+  body {
+    margin: 0;
+  }
   /* Responsive Navbar  */
+
   .hidden {
     display: none;
   }
@@ -82,10 +148,9 @@
     margin: 0;
   }
 
-  .common-margin {
+  .navbar {
     margin: 28px 16px;
   }
-
   .nav-logo {
     max-width: 63px;
     max-height: 38px;
@@ -94,16 +159,18 @@
   /* Responsive banner  */
   .banner {
     flex-direction: column-reverse;
+    margin: 0;
   }
 
   .banner-image {
-    width: 110%;
+    width: 100%;
     margin-bottom: 28px;
   }
 
   .banner-info {
     max-width: auto;
     max-height: 147px;
+    margin: 28px 16px;
   }
   .banner-title {
     font-size: 1.5rem;
@@ -111,6 +178,27 @@
   }
 
   .banner-description {
-    font-size: 1rem;
+    font-size: 0.875rem;
+  }
+
+  /* Responsive card section  */
+  .our-plants {
+    margin: 0;
+  }
+
+  .our-plants-title {
+    font-size: 1.5rem;
+    margin-top: 65px;
+  }
+
+  .our-plants-description {
+    text-shadow: none;
+    padding: 0 28px;
+    text-size-adjust: 85%;
+  }
+
+  .card-container {
+    grid-template-columns: repeat(2, 1fr);
+    margin: auto 15px;
   }
 }
