@@ -5,10 +5,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Flower Market</title>
     <link rel="stylesheet" href="./styles/style.css" />
+
+    <!-- Google Fonts -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+    />
+
+    <!-- Google Font Inter and Noto Serif -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
+
   <body>
-    <header></header>
-    <main></main>
+    <header>
+      <!-- Navbar -->
+      <nav class="navbar inter common-margin">
+        <img class="nav-logo" src="./assets/logo.png" alt="Nav Logo" />
+        <ul class="nav-contents">
+          <li class="bold hidden">Home</li>
+          <li class="gray-1 hidden">Shop</li>
+          <li class="gray-1 hidden">About us</li>
+          <li><i class="fa-solid fa-cart-shopping"></i>Cart ($56)</li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Banner Section  -->
+      <section class="banner common-margin">
+        <div class="banner-info">
+          <div class="banner-title noto-serif bold">
+            ALWAYS
+            <span class="text-primary"
+              >FRESH <br />
+              FLOWERS</span
+            >
+          </div>
+          <div class="banner-description gray-2 inter">
+            Indulge your senses with the beauty and fragrance of our fresh
+            flower shop. From classic roses to exotic blooms, we offer a wide
+            variety of fresh flowers that are perfect for any occasion.
+          </div>
+        </div>
+        <img
+          src="./assets/hero-flower.png"
+          alt="Banner Picture"
+          class="banner-image"
+        />
+      </section>
+    </main>
+
     <footer></footer>
   </body>
 </html>
