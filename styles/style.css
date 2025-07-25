@@ -50,8 +50,17 @@
   list-style: none;
 }
 
+.nav-contents li:hover {
+  background-color: black;
+  padding: 10px 20px;
+  color: white;
+  border-radius: 10px;
+  font-weight: bolder;
+}
+
 .nav-contents li {
   margin-right: 48px;
+  transition: all 0.3s;
 }
 /* Navbar styles ends  */
 
@@ -105,7 +114,11 @@
 }
 
 .card {
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s;
+}
+
+.card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
 }
 
 .card img {
@@ -166,6 +179,16 @@
   right: -110px;
   width: 250px;
   height: auto;
+  animation: spin 4s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .plant-lover-info {
@@ -328,6 +351,12 @@ input:focus {
   font-weight: 600;
   font-size: 1rem;
   cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+
+.colorful-bunch-button:hover {
+  background-color: rgb(57, 24, 245);
+  font-size: 1.2rem;
 }
 
 /* Footer section  */
@@ -360,9 +389,11 @@ footer {
   text-decoration: none;
   color: rgba(107, 114, 128, 1);
   font-size: 1rem;
+  transition: all 0.3s;
 }
 .footer-link-list a:hover {
   text-decoration: underline;
+  color: red;
 }
 .footer-images {
   display: flex;
@@ -374,6 +405,12 @@ footer {
   display: inline-block;
   width: auto;
   height: auto;
+  cursor: pointer;
+  transition: width 5s;
+}
+
+.footer-images img:hover {
+  width: 130%;
 }
 
 /* Responsive Design for Mobile */
